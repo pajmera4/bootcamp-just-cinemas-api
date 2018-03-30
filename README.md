@@ -31,6 +31,3 @@ Once the postgres instance is running run
 5. Get the IP address of the EC2 box created to host your API and provide update in the build stage of the UI project build. You can test 
 
 
-
-
-
