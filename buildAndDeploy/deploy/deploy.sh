@@ -13,9 +13,6 @@ function createElasticIPAndSecurityGroup() {
 }
 
 function deleteOldAPIDeploymentStackIfExists() {
-    export AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
-    export AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
-    export AWS_DEFAULT_REGION=${AWS_REGION}
     aws cloudformation describe-stacks --stack-name api-deployment-${tagName}
     doesStackExist=$?
     if [ "$doesStackExist" -eq 0 ]; then
