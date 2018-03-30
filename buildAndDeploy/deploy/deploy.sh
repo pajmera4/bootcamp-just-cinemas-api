@@ -13,6 +13,7 @@ function createElasticIPAndSecurityGroup() {
 }
 
 function deleteOldAPIDeploymentStackIfExists() {
+    echo api-deployment-${tagName}
     aws cloudformation describe-stacks --stack-name api-deployment-${tagName}
     doesStackExist=$?
     echo $doesStackExist
