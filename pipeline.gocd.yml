@@ -2,11 +2,11 @@ format_version: 2
 environments:
   ci:
     pipelines:
-      - "team1API"
+      - "team11API"
       
 pipelines:
-  "team1API":
-    group: team1
+  "team11API":
+    group: team11
     materials:
       ui:
         git: "git@github.com:pajmera4/bootcamp-just-cinemas-api"
